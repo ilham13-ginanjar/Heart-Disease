@@ -1,9 +1,9 @@
 import numpy as np
 import pickle
 import streamlit as st
-from keras.models import load_model
+import tensorflow as tf
 
-loaded_model = load_model(model.sav)
+loaded_model = tf.keras.models.load_model(model.sav)
 
 def heart_predict(input_data):
     input_array = np.asarray(input_data)
