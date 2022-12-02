@@ -1,8 +1,9 @@
 import numpy as np
 import pickle
 import streamlit as st
+from keras.models import load_model
 
-loaded_model = pickle.load(open('C:/Users/dhiem/Documents/model/model.sav','rb'))
+loaded_model = load_model(model.sav)
 
 def heart_predict(input_data):
     input_array = np.asarray(input_data)
